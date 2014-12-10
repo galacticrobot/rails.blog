@@ -1,0 +1,45 @@
+//Lato
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+//Open sans
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+
+$mainBgColor: #D9A868;
+$containerColor: #FFE7C9;
+$mainFontColor: #8A5818;
+$mainHeaderColor: #B27E3A;
+
+//  Border Box
+// ===============================================
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+//  General
+// ===============================================
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    // font-family: 'Lato', sans-serif;
+    background-color: $mainBgColor;
+    color: $mainFontColor;
+}
+
+//  Typography
+// ===============================================
+
+h1,h2,h3,h4,h5 {
+    color: $mainHeaderColor;
+}
+
+//  Container
+// ===============================================
+.container {
+    @include outer-container;
+    background-color: $containerColor;
+    padding: 2em 1em;
+}
