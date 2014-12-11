@@ -156,7 +156,7 @@ a {
             }
         }
     }
-    .date_and_author {
+    .date-and-author {
         color: #9eafba;
         margin: .5em 0 0 0;
     }
@@ -174,7 +174,7 @@ a {
         font-size: 1.1em;
         line-height: 1.75;
     }
-    .date_and_author {
+    .date-and-author {
         color: #9eafba;
         margin: .5em 0 2em 0;
     }
@@ -191,18 +191,18 @@ a {
             border-bottom: 1px solid #d6dce0;
             padding: 1.5em 2em;
         }
-        .comment_content {
+        .comment-content {
             float: left;
-            .comment_name {
+            .comment-name {
                 margin: 1em 0 0 0;
                 font-size: 0.7em;
                 text-transform: uppercase;
             }
-            .comment_body {
+            .comment-body {
                 font-size: 1.2em;
                 margin: 0.2em 0 0 0;
             }
-            .comment_time {
+            .comment-time {
                 margin-top: 1.2em;
                 font-size: .8em;
             }
