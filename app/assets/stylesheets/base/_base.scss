@@ -272,3 +272,18 @@ input[type="submit"] {
         color: #33acb7;
     }
 }
+
+.errors {
+    background-color: #fcf8f8;
+    padding: 10px 20px;
+    color: #C14A35;
+}
+
+
+.edit-link, .delete-link {
+    color: rgb(51, 172, 183);
+}
+
+.page-wrapper, .post-content, .post-wrapper {
+    max-width: 900px;
+}

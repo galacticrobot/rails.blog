@@ -17,11 +17,30 @@ class PostsController < ApplicationController
         else
             render 'new'        #otherwise, render the new template again (with content intact)
         end
-
     end
 
     def show
         @post = Post.find(params[:id]) #find posts by ID.
+    end
+
+    def edit
+        @post = Post.find(params[:id]) #find posts to edit by ID
+    end
+
+    def update
+        @post = Post.find(params[:id])
+        if
+            @post.update(params[:post].permit(:title, :body))
+            redirect_to @post
+        else
+            render 'edit'
+        end
+    end
+
+    def destroy
+        @post = Post.find(params[:id])  #find item
+        @post.destroy                   #destroy it
+        redirect_to root_path           #redirect to root
     end
 
     private
