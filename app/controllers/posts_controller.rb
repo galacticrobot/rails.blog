@@ -5,12 +5,19 @@ class PostsController < ApplicationController
     end
 
     def new
+        @post = Post.new
     end
 
     def create
         @post = Post.new(post_params) #defined below in private
-        @post.save
-        redirect_to @post #what to do when action is finished.
+
+        if
+            @post.save          #If the post is saved
+            redirect_to @post   #Go to that post
+        else
+            render 'new'        #otherwise, render the new template again (with content intact)
+        end
+
     end
 
     def show
